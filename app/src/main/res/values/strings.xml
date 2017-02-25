@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CloseApplication</string>
+    <string name="btnclose">Close</string>
+    <string name="title_activity_second">SecondActivity</string>
+    <string name="title_activity_third">ThirdActivity</string>
+    <string name="btnCaptionSecond_activity">second_activity</string>
+    <string name="swap_clock">Swap Clock</string>
+    <string name="buttonlogin">Login</string>
+    <string name="eTextName">Name</string>
+    <string name="tViewMessage">TextView</string>
+    <string name="et_druga_aktywno">Uruchom Trzecią</string>
+    <string name="btn_uruchom_trzeci">Uruchom Trzecią</string>
+    <string name="et_uruchom_drug">Odpowiedź z Trzeciej</string>
+    <string name="btn_uruchom_drug">Uruchom Drugą</string>
+    <string name="btn_odpowied_do_drugiej">Odpowiedź do drugiej</string>
+    <string name="textview">TextView</string>
+</resources>
