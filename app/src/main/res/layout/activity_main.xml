@@ -28,6 +28,15 @@
         android:layout_alignParentStart="true"
         android:id="@+id/btn_secondActivity" />
 
+    <Button
+        android:text="@string/btnCaptionFourth_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btn_fourthActivity"
+        tools:ignore="RelativeOverlap,RtlHardcoded" />
+
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -18,6 +18,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignRight="@+id/lista"
         android:text="@string/btn_fourth_odswiez"
+        android:onClick="odswiezDane"
         tools:ignore="RtlHardcoded" />
     <ListView
         android:id="@+id/lista"

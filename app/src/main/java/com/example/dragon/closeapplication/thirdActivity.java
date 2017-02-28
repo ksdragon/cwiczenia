@@ -1,6 +1,7 @@
 package com.example.dragon.closeapplication;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -35,5 +36,12 @@ public class thirdActivity extends AppCompatActivity {
         zamiar.putExtra(WYNIK, et2.getText().toString());
         setResult(RESULT_CANCELED,zamiar);
         finish();
+    }
+
+    public void runWWW(View v) // uruchanienie WWWW
+    {
+        Intent zamiar=new Intent(Intent.ACTION_VIEW,
+                Uri.parse("http://developer.android.com"));
+        startActivity(zamiar);
     }
 }

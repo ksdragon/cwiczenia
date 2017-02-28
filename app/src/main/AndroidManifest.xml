@@ -33,6 +33,19 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".fourthActivity"
+            android:label="@string/title_activity_fourth">
+            <intent-filter>
+                <action android:name="com.example.dragon.closeapplication.fourthActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+
+
+
     </application>
 
 </manifest>

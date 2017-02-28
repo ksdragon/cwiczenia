@@ -33,7 +33,7 @@ public class SecondActivity extends Activity {
         EditText et =(EditText) findViewById(R.id.etSecond_Message1);
         Intent zamiar=new Intent(this, thirdActivity.class);
         zamiar.putExtra(TEXT_ACTIVITY_SECOND,et.getText().toString());
-        startActivityForResult(zamiar,KOD);
+        startActivityForResult(zamiar,KOD); // żądanie wyniku z odpowiednim kodem  KOD ma różnie atrybuty
         //startActivity(zamiar);
     }
 

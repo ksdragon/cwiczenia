@@ -89,9 +89,10 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        onButtonClickListener();
-        OnClickButtonListener();
-        onButtonLoginLisiner();
+        onButtonClickListener();  // zamykanie aplikacji z alert box-em
+        OnClickButtonListener(); // przechodzenie do innej aktywniści 2
+        OnClickButtonListenerfourthActyvites(); //  przechdzenie do aktywności 4
+        onButtonLoginLisiner();  // przesyłanie tekstu do drugiej aktywności przez zmienna NAPIS
         /*if (savedInstanceState!=null)
         {
             TextView tv=(TextView) findViewById(R.id.editTextName);
@@ -99,7 +100,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         }*/
 
 
-        this.gestureDetector = new GestureDetectorCompat(this, this);
+        this.gestureDetector = new GestureDetectorCompat(this, this);  // Obsługa gestów
         gestureDetector.setOnDoubleTapListener(this);
 
     }
@@ -162,6 +163,20 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent("com.example.dragon.closeapplication.SecondActivity");
+                        startActivity(intent);
+                    }
+                }
+        );
+
+    }
+
+    public void OnClickButtonListenerfourthActyvites() {
+        button_SecondActivity = (Button)findViewById(R.id.btn_fourthActivity);
+        button_SecondActivity.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent("com.example.dragon.closeapplication.fourthActivity");
                         startActivity(intent);
                     }
                 }
