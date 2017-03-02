@@ -6,5 +6,22 @@
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
-        app:showAsAction="never" />
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/akcja_plus"
+        android:icon="@drawable/ic_plus"
+        app:showAsAction="always"
+        android:title="Zwiększ">
+    </item>
+    <item
+        android:id="@+id/akcja_minus"
+        android:icon="@drawable/ic_minus"
+        app:showAsAction="always"
+        android:title="Zmniejsz">
+    </item>
+    <item
+        android:id="@+id/akcja_reset"
+        app:showAsAction="always"
+        android:title="Reset">
+    </item>
 </menu>
