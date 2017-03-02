@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">CloseApplication</string>
     <string name="btnclose">Close</string>
+    <string name="action_settings">Settings</string>
     <string name="title_activity_second">SecondActivity</string>
     <string name="title_activity_third">ThirdActivity</string>
     <string name="title_activity_fourth">FourthActivity</string>
