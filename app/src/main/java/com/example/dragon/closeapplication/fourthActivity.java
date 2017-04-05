@@ -26,7 +26,7 @@ public class fourthActivity extends AppCompatActivity {
     // generowanie liczb z odświeżaniem i obsługą zdarzeń ListView
     private void listViewRandomNumber() {
         Random generator = new Random();
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 20; i++)
             mDane.add(generator.nextInt(100));
         mLista = (ListView) findViewById(R.id.lista);
 
@@ -47,17 +47,17 @@ public class fourthActivity extends AppCompatActivity {
                     AdapterView<?> arg0, View arg1,
                     int arg2, long arg3) {
                 Toast.makeText(fourthActivity.this, "Kliknieto: " +
-                        mDane.get(arg2),Toast.LENGTH_SHORT).show();
+                        mDane.get(arg2), Toast.LENGTH_SHORT).show();
             }
         });
 
     }
+
     // obsługa klawisza odśwież z wykorzystaniem adaptera ArrayAdapter
-    public void odswiezDane(View v)
-    {
+    public void odswiezDane(View v) {
         mDane.clear();
         Random generator = new Random();
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 20; i++)
             mDane.add(generator.nextInt(100));
         mAdapter.notifyDataSetChanged();
     }

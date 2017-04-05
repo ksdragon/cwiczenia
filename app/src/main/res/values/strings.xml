@@ -19,4 +19,9 @@
     <string name="textview">TextView</string>
     <string name="brt_uruchom_www">Uruchom WWW</string>
     <string name="btn_fourth_odswiez">Odśwież</string>
+    <string name="et_CzasDzialaniaEtykieta">Czas Działania: </string>
+    <string name="et_czas_dzialania_etykieta"></string>
+    <string name="tv_wynik_etykieta">Wynik</string>
+    <string name="btn_Uruchom">Uruchom</string>
+    <string name="btn_uruchomPrzyciskOpis">Uruchom</string>
 </resources>

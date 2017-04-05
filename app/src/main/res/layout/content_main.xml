@@ -61,4 +61,48 @@
         android:id="@+id/buttonLogin"
         android:layout_below="@+id/editTextName"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:text="@string/et_CzasDzialaniaEtykieta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="28dp"
+        android:id="@+id/tvCzasDzialaniaEtykieta" />
+
+    <TextView
+        android:text="@string/et_czas_dzialania_etykieta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvCzasDzialaniaEtykieta"
+        android:layout_toEndOf="@+id/buttonLogin"
+        android:id="@+id/czas_dzialania_etykieta"
+        android:layout_alignLeft="@+id/buttonLogin"
+        android:layout_alignStart="@+id/buttonLogin" />
+
+    <TextView
+        android:text="@string/tv_wynik_etykieta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/wynik_etykieta"
+        android:layout_below="@+id/tvCzasDzialaniaEtykieta"
+        android:layout_alignLeft="@+id/tvCzasDzialaniaEtykieta"
+        android:layout_alignStart="@+id/tvCzasDzialaniaEtykieta" />
+
+    <Button
+        android:text="@string/btn_Uruchom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:id="@+id/uruchom_przycisk"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/wynik_etykieta"
+        android:layout_alignStart="@+id/wynik_etykieta" />
+
+
 </RelativeLayout>
