@@ -24,4 +24,9 @@
     <string name="tv_wynik_etykieta">Wynik</string>
     <string name="btn_Uruchom">Uruchom</string>
     <string name="btn_uruchomPrzyciskOpis">Uruchom</string>
+    <string name="title_activity_fiftth">fiftthActivity</string>
+    <string name="adres">Adres:</string>
+    <string name="name">URL</string>
+    <string name="pobierz">Pobierz</string>
+    <string name="btnFifthActivity">FIFTH ACTIVITY</string>
 </resources>

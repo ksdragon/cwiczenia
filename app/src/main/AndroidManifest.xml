@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dragon.closeapplication">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -47,8 +47,18 @@
         </activity>
 
         <service
-            android:name="com.example.dragon.closeapplication.MojaIntentService"
-            android:exported="false"></service>
+            android:name=".MojaIntentService"
+            android:exported="false" />
+
+        <activity
+            android:name=".fifthActivity"
+            android:label="@string/title_activity_fiftth">
+            <intent-filter>
+                <action android:name="com.example.dragon.closeapplication.fifthActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

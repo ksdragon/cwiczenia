@@ -6,6 +6,8 @@ import android.os.Parcelable;
 /**
  * Created by HP ProDesk on 2017-04-05.
  */
+// klasa do komunikacji między aktywnościami z wykorzystamiem parcelable - można przekazywać całe obiekty
+    // klasa tworzy kopie obiektu który jest przekazywany
 
 public class Czas implements Parcelable {
 

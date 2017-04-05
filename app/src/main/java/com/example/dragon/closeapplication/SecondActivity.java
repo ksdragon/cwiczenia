@@ -21,7 +21,7 @@ public class SecondActivity extends Activity {
     public static final String EXTRA_MESSAGE="textMessage";
     public static final String TEXT_ACTIVITY_SECOND = "textDrugiejAktywnośic";
     public static final int KOD = 1;
-
+    public static final int CZAS = 20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,7 +81,7 @@ public class SecondActivity extends Activity {
                         Log.d("second Activity","btn_uruchmom Przycisk");
                         MojaIntentService.uruchomOdliczanie(
                                 SecondActivity.this, //kontekst
-                                10); //czas
+                                CZAS); //czas
 
                     }
                 }
@@ -101,6 +101,7 @@ public class SecondActivity extends Activity {
     protected void aktualizujPostep(int c) {
         ProgressBar pasekPostepu =
                 (ProgressBar) findViewById(R.id.postep_pasek);
+        pasekPostepu.setMax(CZAS);
         pasekPostepu.setProgress(c);
     }
     @Override //zarejestrowanie odbiorcy

@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
     private static Button button_close;
     private static Button button_SecondActivity;
+    private static Button button_fifthActivity;
     private static Button button_Login;
     private static TextView mCzasDzialaniaEtykieta;
     private GestureDetectorCompat gestureDetector;
@@ -102,6 +103,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         OnClickButtonListenerfourthActyvites(); //  przechdzenie do aktywności 4
         onButtonLoginLisiner();  // przesyłanie tekstu do drugiej aktywności przez zmienna NAPIS
         uruchomZadanieAcynchroniczne();
+        OnClickButtonListenerFifthActivyty();
         /*if (savedInstanceState!=null)
         {
             TextView tv=(TextView) findViewById(R.id.editTextName);
@@ -172,6 +174,20 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent("com.example.dragon.closeapplication.SecondActivity");
+                        startActivity(intent);
+                    }
+                }
+        );
+
+    }
+
+    public void OnClickButtonListenerFifthActivyty() {
+        button_fifthActivity = (Button) findViewById(R.id.btn_fifthActivity);
+        button_fifthActivity.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent = new Intent("com.example.dragon.closeapplication.fifthActivity");
                         startActivity(intent);
                     }
                 }
