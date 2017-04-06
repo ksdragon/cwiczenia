@@ -115,5 +115,16 @@
         android:layout_alignLeft="@+id/btn_fourthActivity"
         android:layout_alignStart="@+id/btn_fourthActivity" />
 
+    <Button
+        android:text="@string/btn_baza_danych"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_bazaDanychActivity"
+        android:layout_below="@+id/btn_fifthActivity"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/btn_fifthActivity"
+        android:layout_alignStart="@+id/btn_fifthActivity" />
+
 
 </RelativeLayout>

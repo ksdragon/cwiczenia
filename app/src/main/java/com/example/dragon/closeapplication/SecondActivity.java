@@ -88,7 +88,7 @@ public class SecondActivity extends Activity {
         );
 
     }
-
+    // obsługa usługi MojaInterncjaService
     private BroadcastReceiver mOdbiorcaRozgloszen = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {

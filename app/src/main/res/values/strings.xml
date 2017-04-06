@@ -29,4 +29,6 @@
     <string name="name">URL</string>
     <string name="pobierz">Pobierz</string>
     <string name="btnFifthActivity">FIFTH ACTIVITY</string>
+    <string name="title_activity_baza_danych">BazaDanych</string>
+    <string name="btn_baza_danych">Baza Danych</string>
 </resources>
