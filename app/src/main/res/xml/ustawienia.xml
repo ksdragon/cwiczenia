@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <PreferenceCategory android:title="Kategoria ustawień" >
+        <EditTextPreference
+            android:defaultValue="ustawienie tekstowe"
+            android:dialogMessage="Wpisz napis"
+            android:dialogTitle="Ustawienie tekstowe"
+            android:key="ustawienie_tekstowe"
+            android:negativeButtonText="Anuluj"
+            android:positiveButtonText="OK"
+            android:summary="Opis ustawienia tekstowego"
+            android:title="Ustawienie tekstowe" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="ustawienie_logiczne"
+            android:summary="Opis ustawienia logicznego"
+            android:summaryOff="ustawienie logiczne wyłączone"
+            android:summaryOn="ustawienie logiczne włączone"
+            android:title="Ustawienie logiczne" />
+    </PreferenceCategory>
+</PreferenceScreen>

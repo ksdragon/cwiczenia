@@ -2,8 +2,10 @@ package com.example.dragon.closeapplication;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v4.view.GestureDetectorCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -120,6 +122,42 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         gestureDetector.setOnDoubleTapListener(this);
 
     }
+
+    //ustawienia współdzielone
+    SharedPreferences mUstawienia = null;
+    //onStart() - będzie wywołana przy powrocie do aktywności
+    @Override
+    protected void onStart() {
+        mUstawienia =
+                PreferenceManager.getDefaultSharedPreferences(this);
+    //jeżeli chcemy modyfikować potrzebny jest edytor
+        SharedPreferences.Editor edytorUstawien = mUstawienia.edit();
+//odczytanie wartości
+        if (mUstawienia.getString("ustawienie_tekstowe",
+                "").equals("")) {
+
+            edytorUstawien.putString("ustawienie_tekstowe",
+                    "domyślna z kodu");
+            edytorUstawien.commit(); //zatwierdzenie zmian
+        }
+        TextView tekstowaEtykieta =
+                (TextView) findViewById(R.id.testowa_etykieta);
+        tekstowaEtykieta.setText(
+                mUstawienia.getString("ustawienie_tekstowe","błąd"));
+        TextView logicznaEtykieta =
+                (TextView) findViewById(R.id.logiczna_etykieta);
+        logicznaEtykieta.setText(Boolean.toString(
+                mUstawienia.getBoolean("ustawienie_logiczne", false)));
+        super.onStart();
+    }
+    //uruchamianie aktywności ustawień (obsługa opcji menu)
+    private void uruchomUstawienia() {
+        Intent zamiar = new Intent(this, UstawieniaActivity.class);
+        startActivity(zamiar);
+    }
+
+
+
 
     private void onButtonLoginLisiner() {
         button_Login = (Button) findViewById(R.id.buttonLogin);
@@ -293,7 +331,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
+            uruchomUstawienia();
         }
         return super.onOptionsItemSelected(item);
 

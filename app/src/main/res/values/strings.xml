@@ -31,4 +31,5 @@
     <string name="btnFifthActivity">FIFTH ACTIVITY</string>
     <string name="title_activity_baza_danych">BazaDanych</string>
     <string name="btn_baza_danych">Baza Danych</string>
+    <string name="title_activity_ustawienia">UstawieniaActivity</string>
 </resources>
