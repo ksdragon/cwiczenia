@@ -62,6 +62,7 @@ public class fifthActivity extends AppCompatActivity {
                 }
             }
             return budowniczyNapisu.toString();
+
         }
 
         @Override
